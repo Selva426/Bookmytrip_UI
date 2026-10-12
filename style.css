@@ -1,0 +1,350 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #eee;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.wrap {
+
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+header {
+  background: white;
+  padding: 10px 0;
+}
+
+header .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.logo {
+  height: 50px;
+}
+
+.phone {
+  font-size: 13px;
+  color: #2a62ae;
+  text-align: right;
+}
+
+nav {
+  background: #0b61d9;
+}
+
+nav .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#menuBtn {
+  display: none;
+  background: none;
+  border: 0;
+  color: rgb(240, 239, 239);
+  padding: 12px 0;
+  font-size: 15px;
+}
+
+.menu {
+  display: flex;
+  width: 100%;
+}
+
+.menu a {
+  display: block;
+  padding: 12px 14px;
+  color: white;
+  font-size: 14px;
+}
+
+.menu .nav-dropdown{
+  position: relative;
+}
+
+.nav-dropdown summary  {
+  position: relative;
+  display: block;
+  padding: 12px 28px 12px 14px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.nav-dropdown summary::-webkit-details-marker {
+  display: none;
+}
+
+.nav-dropdown summary::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+  border-top-color: currentColor;
+  transform: translateY(-25%);
+}
+
+.nav-dropdown details > ul {
+  position: absolute;
+  z-index: 2;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (hover: hover) and (min-width: 701px) {
+  .nav-dropdown details:hover > ul,
+  .nav-dropdown details:focus-within > ul {
+    display: block;
+  }
+}
+
+.nav-dropdown details > ul a {
+  color: #222;
+  white-space: nowrap;
+}
+
+.nav-dropdown details > ul a:hover,
+.nav-dropdown details > ul a:focus {
+  background: #eee;
+}
+
+.menu li:last-child {
+  margin-left: auto;
+}
+
+.menu .signup {
+  background: #ffd500;
+  color: #222;
+  margin: 6px 0;
+  padding: 6px 14px;
+}
+
+.hero {
+  background: url("./images/Osaka.jpeg") center / cover;
+  padding: 50px 0 20px;
+}
+
+.hero-text {
+  text-decoration-color: #000000;
+  color: rgb(242, 239, 239);
+  padding: 15px;
+  max-width: 350px;
+  margin-left: auto;
+  line-height: 1.6;
+  background-color: rgb(106, 106, 255);
+  border-radius: 10px;
+}
+
+.booking {
+  background: white;
+  border: 4px solid #111;
+  padding: 15px;
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.booking select,
+.booking input {
+  flex: 1;
+  min-width: 120px;
+  height: 34px;
+  padding: 0 8px;
+}
+
+.booking button {
+  height: 34px;
+  padding: 0 24px;
+  background: #e8372c;
+  color: white;
+  border: 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.search-results {
+  margin-top: 24px;
+}
+
+.search-results h3 {
+  margin: 0 0 12px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  background: white;
+}
+
+.search-results table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.search-results th,
+.search-results td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #ddd;
+}
+
+.search-results th {
+  background: #f5f5f5;
+  font-size: 14px;
+}
+
+main h3 {
+  margin: 30px 0 15px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding-bottom: 10px;
+}
+
+.card img {
+  height: 140px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card p {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.card span {
+  background: #2f6bb5;
+  color: white;
+  padding: 5px 12px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.deals {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.deal {
+  position: relative;
+}
+
+.deal img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.deal p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: rgb(6, 6, 6);
+  font-size: 20px;
+  font-weight: bolder;
+  margin-bottom: 60px;
+}
+
+footer {
+  background: white;
+  margin-top: 40px;
+  padding: 25px 0;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+footer .wrap {
+  display: flex;
+  gap: 60px;
+}
+
+footer h4 {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 700px) {
+  #menuBtn {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .menu li:last-child {
+    margin-left: 0;
+  }
+
+  .nav-dropdown details > ul {
+    position: static;
+    box-shadow: none;
+    background: #084eaf;
+  }
+
+  .nav-dropdown details > ul a {
+    padding-left: 28px;
+    color: white;
+  }
+
+  .hero-text {
+    max-width: none;
+  }
+
+  .cards,
+  .deals {
+    grid-template-columns: 1fr;
+  }
+
+  footer .wrap {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

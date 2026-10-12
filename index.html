@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BookMyTrip</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <img src="images/logo.png" alt="BookMyTrip" class="logo">
+    <p class="phone">Call 24/7 Support<br><b>+91 (91) 987654321</b></p>
+  </div>
+</header>
+
+<nav>
+  <div class="wrap">
+    <button id="menuBtn">&#9776; Menu</button>
+    <ul id="menu" class="menu">
+      <li class="nav-dropdown">
+        <details>
+          <summary>Hotels</summary>
+          <ul>
+            <li><a href="#popular-hotels">Popular Hotels</a></li>
+            <li><a href="#searchForm">Search Hotels</a></li>
+            <li><a href="#">Activities</a></li>
+            <li><a href="#">International Hotels</a></li>
+            <li><a href="#">Best Hotel deals</a></li>
+          </ul>
+        </details>
+      </li>
+      <li><a href="#">Flights</a></li>
+      <li><a href="#">Vacations</a></li>
+      <li><a href="#deals">Hot Deals</a></li>
+      <li><a href="#">Blogs</a></li>
+      <li><a href="#" class="signup">Sign Up</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-text">
+      <h2>Osaka shrine hotel, Osaka, Japan</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <p><b>₹12000</b> Inclusive of food, dinner</p>
+    </div>
+
+    <form id="searchForm" class="booking">
+      <select name="type">
+        <option>Hotel</option>
+        <option>Flight</option>
+        <option>Vacation</option>
+      </select>
+      <select name="location">
+        <option>Location</option>
+        <option>Mumbai</option>
+        <option>Zurich</option>
+        <option>Melbourne</option>
+      </select>
+      <input type="date" name="date">
+      <select name="adults">
+        <option>Adults</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+      </select>
+      <button>Search</button>
+    </form>
+  </div>
+</section>
+
+<main class="wrap">
+  <section class="search-results" aria-labelledby="searchResultsTitle">
+    <h3 id="searchResultsTitle">Your Searches</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Type</th>
+            <th scope="col">Location</th>
+            <th scope="col">Date</th>
+            <th scope="col">Adults</th>
+          </tr>
+        </thead>
+        <tbody id="searchResults"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <h3 id="popular-hotels">Popular Hotels</h3>
+  <div class="cards">
+    <div class="card">
+      <img src="images/hotel1.jpg" alt="Hotel Tajmahal Palace">
+      <p><b>Hotel Tajmahal Palace</b><br>Mumbai, India</p>
+      <span>₹20000</span>
+    </div>
+    <div class="card">
+      <img src="images/hotel2.jpg" alt="Mont Blanc">
+      <p><b>Mont Blanc</b><br>Zurich, Switzerland</p>
+      <span>₹32000</span>
+    </div>
+    <div class="card">
+      <img src="images/hotel3.jpg" alt="Hotel Marriott">
+      <p><b>Hotel Marriott</b><br>Melbourne, Australia</p>
+      <span>₹12000</span>
+    </div>
+  </div>
+
+  <h3 id="deals">Hot Deals</h3>
+  <div class="deals">
+    <div class="deal">
+      <img src="images/deal1.jpg" alt="Paris Eurostar Breaks">
+      <p>FINLAND EUROSTAR BREAKS<br>From ₹120000</p>
+    </div>
+    <div class="deal">
+      <img src="images/deal2.jpg" alt="Island Escapes">
+      <p>ISLAND ESCAPES<br>From ₹100000</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h4>Company</h4>
+      <p>About us<br>Terms and Conditions<br>Privacy Policy</p>
+    </div>
+    <div>
+      <h4>Customer Support</h4>
+      <p>Contact<br>FAQ</p>
+    </div>
+    <div>
+      <h4>Follow us</h4>
+      <p>Facebook<br>Twitter<br>YouTube</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
